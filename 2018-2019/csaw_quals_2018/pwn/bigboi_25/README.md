@@ -32,20 +32,20 @@ So when we give it text, it gives us the current time UTC... hmm
 
 Disassembler time!
 
-![Binary Ninja Disassembly](/images/bigboi1.png)
+![Binary Ninja Disassembly](https://github.com/HackUCF/ctfs/raw/csaw_quals_bigboi/2018-2019/csaw_quals_2018/pwn/bigboi_25/images/bigboi1.png)
 
 So what we see is that a conditional is run after `read` is called to compare `eax` with `0xcaf3baee`. If our value is not equal to `0xcad3baee`, then `/bin/date` is run. Else `/bin/bash` is run. You can guess which path of execution we want...
 
 So from what I can see here i'm betting it's a buffer overflow given that `gets` is used. `gets` doesn't check for buffer sizes and is thus extremely volatile. If I name both the variable that `gets` puts our input into as well as the variable being compared to `0xcaf3baee` in Binja, then we can see offsets:
 
-![Stack Overview](/images/bigboi2.png)
+![Stack Overview](https://github.com/HackUCF/ctfs/raw/csaw_quals_bigboi/2018-2019/csaw_quals_2018/pwn/bigboi_25/images/bigboi2.png)
 
 So we know that there is a difference of:
 
     0x38-0x28 = 16 Bytes
 
 between our variables. The difference we see, however, is that our variable is actually at that offset `+0x4`.
-![+0x4](/images/bigboi3.png)
+![+0x4](https://github.com/HackUCF/ctfs/raw/csaw_quals_bigboi/2018-2019/csaw_quals_2018/pwn/bigboi_25/images/bigboi3.png)
 So we add 4 to 16 Bytes and we get an offset of 20 Bytes.
 
 With this knowledge, we can then create our payload:
