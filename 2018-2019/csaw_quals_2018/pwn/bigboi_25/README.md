@@ -1,7 +1,14 @@
-## CTF: CSAW Quals 2018
-## Category: PWN
-## Point Value: 25
-## Challenge Author: github.com/Helithumper
+# BigBoi
+
+## Information
+
+*CTF*: CSAW Quals 2018
+
+*Category*: PWN
+
+*Point Value*: 25
+
+*Writeup Author*: github.com/Helithumper
 
 ## Challenge Description
 
