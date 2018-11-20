@@ -52,7 +52,9 @@ So we know that there is a difference of:
     0x38-0x28 = 16 Bytes
 
 between our variables. The difference we see, however, is that our variable is actually at that offset `+0x4`.
+
 ![+0x4](images/bigboi3.png)
+
 So we add 4 to 16 Bytes and we get an offset of 20 Bytes.
 
 With this knowledge, we can then create our payload:
