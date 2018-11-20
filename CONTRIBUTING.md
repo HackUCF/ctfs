@@ -16,7 +16,7 @@ In Summary, The directory for a challenge might look like: `sunshine_ctf_2018/pw
 
 ## Competition README
 
-Each competition will have a README.md file. This file will contain information such as the organizing group of the CTF, the dates the competition took place, Hack@UCF's final standing, as well as a list of contributors to the writeups for this CTF.
+Each competition will have a README.md file. This file will contain information such as the organizing group of the CTF, the dates the competition took place, Hack@UCF's final standing, as well as a list of contributors to the writeups for this CTF. If possible, a `scoreboard.txt` file with the final scoreboard of the competition provided by CTFtime should be included.
 
 ## Challenge README
 
