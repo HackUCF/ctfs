@@ -5,7 +5,7 @@
 ### CTFTime
 
 #### Link
-https://ctftime.org/event/633
+https://ctftime.org/event/347
 
 #### Description
 
@@ -13,4 +13,4 @@ Students tackle problems in a series of real-world scenarios modeling all sorts 
 
 Because the challenges are designed to teach, CTF requires contestants to integrate concepts, develop skills and learn to hack as they go. Undergraduate finalists compete on-site for cash prizes, where their performance is judged by a panel of technical experts.
 
-### Knightsec's Final Placement: 97th
+### Knightsec's Final Placement: 19th
