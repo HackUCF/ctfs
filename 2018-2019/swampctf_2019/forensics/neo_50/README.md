@@ -1,7 +1,7 @@
 # Forensics: Neo
 ## SwampCTF
 
-This was a challenge in the forensics category from SwampCTF. This jpeg file is provided for the challenge:
+This was a 50 point challenge in the forensics category from SwampCTF. This jpeg file is provided for the challenge:
 <p align="center">
   <img src=red_pill.jpeg>
 </p>
